@@ -1,0 +1,47 @@
+  @startuml diagrama
+class Pacman
+{
++ comer()
+}
+class Fantasma
+{
++ mata()
+}
+class FantasmaAzul
+class Maquina
+class Niveles
+class VideoJuegoPacman
+class PersonajesJugables
+class PersonajesNoJugables
+class LocalDeMaquinitas
+class Fruta
+class Puntos
+class Dinero
+class Pildora 
+class Color 
+class Jugador 
+class Estado 
+class Pantalla 
+class Fresa 
+class Naranja 
+class Melon 
+class Sandia 
+
+{
+}
+Fantasma o-- Pacman
+Puntos <|-- Fruta
+ <|--Fruta
+Puntos <|-- FantasmaAzul
+LocalDeMaquinitas *-- Maquina
+Maquina o-- Dinero
+Pacman o-- Puntos
+Maquina *-- VideoJuegoPacman
+Niveles*-- PersonajesNoJugables
+Niveles*-- PersonajesJugables
+PersonajesJugables <|-- Pacman
+PersonajesNoJugables<|-- FantasmaAzul
+PersonajesNoJugables<|-- Fantasma
+VideoJuegoPacman*-- Niveles
+
+@enduml
