@@ -4,5 +4,5 @@
 
 
 int main(){
-    std::cout<<"Hola mundo"<<std::endl;
+    std::cout<<"Imprimir desde c++"<<std::endl;
 }
